@@ -1,0 +1,234 @@
+@charset 'UTF-8';
+
+/* 전체설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* header 설정 ---- */
+header {
+  position: relative;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/hero_website_large.jpg);
+  height: 84vh;
+  background-size: cover;
+  background-position: center top;
+  /* overflow: hidden; */
+}
+
+header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.4rem 2rem;
+}
+
+/* 로고 설정 */
+header h1 {
+  width: 158px;
+  height: 50px;
+  background-image: url(../img/logo.png);
+  text-indent: -9999px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* header-item 설정 */
+header .header-item ul {
+  display: flex;
+}
+
+header .login {
+  margin-left: 1.8rem;
+}
+
+header .login .login-btn {
+  padding: 8px 14px;
+  background-color: #E50914;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* hero 영역 ----- */
+header .hero {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  /* position: relative; */
+  background-color: #E50914;
+}
+
+header .hero .container {
+  /* overflow: hidden; */
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  color: #fff;
+  /* background-color: aqua; */
+  text-align: center;
+  max-width: 1100px;
+  padding: 0 2rem;
+}
+
+header .hero .headline {
+  font-size: 4.2rem;
+  font-weight: 900;
+  margin: 0 auto;
+  /* background-color: #E50914; */
+}
+
+header .hero .subhead {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-top: 1.6rem;
+}
+
+.signup {
+  margin-top: 2rem;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 1.6rem;
+}
+
+.signup-email {
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-email input {
+  width: 100%;
+  max-width: 400px;
+  height: 56px;
+  border: 1px solid #bfbfbf;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-left: 1rem;
+}
+
+.signup-email button {
+  width: 100%;
+  max-width: 170px;
+  height: 56px;
+  margin-left: 0.5rem;
+  background: #E50914;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+/* banner 영역 ------ */
+.banner {
+  width: 100%;
+  background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
+}
+
+.banner .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.banner .banner-txt {
+  color: #fff;
+  margin-left: 30px;
+}
+
+.banner .banner-txt h4 {
+  font-size: 2rem;
+}
+
+.banner .banner-txt p {
+  font-size: 1.6rem;
+  margin: 0.4rem 0 0.8rem;
+}
+
+.banner .banner-txt a {
+  color: #448EF4;
+  font-size: 1.6rem;
+}
+
+.banner .banner-txt em {
+  text-decoration: underline;
+  font-style: normal;
+}
+
+/* contents 영역 설정 ----- */
+.contents>div {
+  background-color: #000;
+  color: #fff;
+  border-top: 8px solid rgba(69, 69, 69);
+  padding: 50px;
+  display: flex;
+  /* z-index: -1; */
+  position: relative;
+}
+
+.contents-1 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contents-1 .image-wrap {
+  position: relative;
+  /* video-wrap에만 z-index: -1을 주면 아예 뒤로 가서 안 보임.
+  -> .image-wrap에 z-index: 1을 주고, .video-wrap에 z-index: -1을 주어서
+  동영상이 뒤에 가도록 설정하여 해결 */
+  z-index: 1;
+}
+
+.contents-1 .container img {
+  width: 100%;
+  z-index: 99;
+}
+
+.contents-1 .video-wrap {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-48%, -54%);
+  max-width: 80%;
+  max-height: 55%;
+}
