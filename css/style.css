@@ -27,6 +27,9 @@ html {
 
 body {
   overflow-x: hidden;
+  /* break-all : 문자 단위로 줄바꿈 - 문자 단위로 줄바꿈
+  keep-all : 단어 단위로 줄바꿈 - 단어 단위로 줄바꿈 */
+  word-break: keep-all;
 }
 
 /* header 설정 ---- */
@@ -116,7 +119,7 @@ header .hero .subhead {
   margin-top: 2rem;
 }
 
-p {
+header .hero p {
   font-size: 2rem;
   font-weight: 400;
   margin-top: 1.6rem;
@@ -193,20 +196,43 @@ p {
 .contents>div {
   background-color: #000;
   color: #fff;
-  border-top: 8px solid rgba(69, 69, 69);
-  padding: 50px;
-  display: flex;
+  border-top: 8px solid rgb(43, 43, 43);
+  padding: 4.5rem 0;
   /* z-index: -1; */
   position: relative;
 }
 
-.contents-1 .container {
+.contents>div .container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  max-width: 76%;
+  background-color: #448EF4;
 }
 
+.contents .title {
+  width: 50%;
+  text-align: left;
+}
+
+.contents .contents-img {
+  width: 50%;
+}
+
+/* 전체 텍스트 설정 */
+.contents .headline {
+  font-size: 4.4rem;
+  letter-spacing: 0rem;
+}
+
+.contents .subhead {
+  font-size: 2rem;
+  font-weight: 400;
+  padding-top: 1.2rem;
+}
+
+/* contents-1 */
 .contents-1 .image-wrap {
   position: relative;
   /* video-wrap에만 z-index: -1을 주면 아예 뒤로 가서 안 보임.
@@ -231,4 +257,109 @@ p {
   transform: translate(-48%, -54%);
   max-width: 80%;
   max-height: 55%;
+}
+
+.contents-1 .contents-img {
+  padding-left: 0.6rem;
+}
+
+/* contents-2 */
+.contents-2 .image-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.contents-2 .container img {
+  width: 100%;
+  z-index: 99;
+}
+
+.contents-2 .video-wrap {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  max-width: 64%;
+  max-height: 50%;
+}
+
+.contents-2 .contents-img {
+  padding-right: 0.6rem;
+}
+
+/* contents-3 */
+.contents-3 .image-wrap {
+  position: relative;
+}
+
+.contents-3 .container img {
+  width: 100%;
+}
+
+.contents-3 .contents-img {
+  padding-left: 0.6rem;
+}
+
+/* contents-4 */
+.contents-4 .image-wrap {
+  position: relative;
+}
+
+.contents-4 .container img {
+  width: 100%;
+}
+
+.contents-4 .contents-img {
+  padding-right: 0.6rem;
+}
+
+.card-animaion {
+  width: 54%;
+  height: auto;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.7rem;
+  background-color: #000;
+}
+
+.card-animaion .image-wrap {
+  width: 50px;
+  height: 70px;
+}
+
+.card-animaion img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-animaion .txt {
+  width: 40%;
+  text-align: left;
+}
+
+.card-animaion .txt p {
+  font-size: 1.6rem;
+}
+
+.card-animaion .txt span {
+  font-size: 1.4rem;
+  color: #0071EB;
+}
+
+.animaion {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/download-icon.gif);
+  background-size: cover;
 }
