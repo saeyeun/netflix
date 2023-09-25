@@ -65,6 +65,7 @@ header h1 {
 /* header-item 설정 */
 header .header-item ul {
   display: flex;
+  align-items: center;
 }
 
 header .login {
@@ -72,16 +73,28 @@ header .login {
 }
 
 header .login .login-btn {
-  padding: 8px 14px;
+  padding: 8px 16px;
   background-color: #E50914;
   border-radius: 6px;
   color: #fff;
   cursor: pointer;
   transition: all 0.3s;
+  font-size: 1.4rem;
 }
 
 header .login .login-btn:hover {
   background-color: #b3070f;
+}
+
+/* select 설정 */
+select {
+  width: 138px;
+  height: 32px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1.4rem;
 }
 
 /* hero 영역 ----- */
@@ -140,6 +153,7 @@ header .hero p {
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.4);
   padding-left: 1rem;
+  color: #fff;
 }
 
 .signup-email button {
