@@ -63,7 +63,7 @@ header h1 {
 }
 
 /* header-item 설정 */
-header .header-item ul {
+header .header_item ul {
   display: flex;
   align-items: center;
 }
@@ -72,7 +72,7 @@ header .login {
   margin-left: 1.8rem;
 }
 
-header .login .login-btn {
+header .login .login_btn {
   padding: 8px 16px;
   background-color: #E50914;
   border-radius: 6px;
@@ -82,7 +82,7 @@ header .login .login-btn {
   font-size: 1.4rem;
 }
 
-header .login .login-btn:hover {
+header .login .login_btn:hover {
   background-color: #b3070f;
 }
 
@@ -139,13 +139,13 @@ header .hero p {
   margin-top: 1.6rem;
 }
 
-.signup-email {
+.signup_email {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.signup-email input {
+.signup_email input {
   width: 100%;
   max-width: 400px;
   height: 56px;
@@ -156,7 +156,7 @@ header .hero p {
   color: #fff;
 }
 
-.signup-email button {
+.signup_email button {
   width: 100%;
   max-width: 170px;
   height: 56px;
@@ -170,7 +170,7 @@ header .hero p {
   transition: all 0.3s;
 }
 
-.signup-email button:hover {
+.signup_email button:hover {
   background-color: #b3070f;
 }
 
@@ -187,26 +187,26 @@ header .hero p {
   padding: 1rem 0;
 }
 
-.banner .banner-txt {
+.banner .banner_txt {
   color: #fff;
   margin-left: 30px;
 }
 
-.banner .banner-txt h4 {
+.banner .banner_txt h4 {
   font-size: 2rem;
 }
 
-.banner .banner-txt p {
+.banner .banner_txt p {
   font-size: 1.6rem;
   margin: 0.4rem 0 0.8rem;
 }
 
-.banner .banner-txt a {
+.banner .banner_txt a {
   color: #448EF4;
   font-size: 1.6rem;
 }
 
-.banner .banner-txt em {
+.banner .banner_txt em {
   text-decoration: underline;
   font-style: normal;
 }
@@ -225,7 +225,7 @@ header .hero p {
   text-align: left;
 }
 
-.contents .contents-img {
+.contents .contents_img {
   width: 50%;
 }
 
@@ -242,7 +242,7 @@ header .hero p {
 }
 
 /* contents-1 */
-.contents .contents-1 .container {
+.contents .contents_1 .container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -250,7 +250,7 @@ header .hero p {
   max-width: 76%;
 }
 
-.contents-1 .image-wrap {
+.contents_1 .image_wrap {
   position: relative;
   /* video-wrap에만 z-index: -1을 주면 아예 뒤로 가서 안 보임.
   -> .image-wrap에 z-index: 1을 주고, .video-wrap에 z-index: -1을 주어서
@@ -258,12 +258,12 @@ header .hero p {
   z-index: 1;
 }
 
-.contents-1 .container img {
+.contents_1 .container img {
   width: 100%;
   z-index: 99;
 }
 
-.contents-1 .video-wrap {
+.contents_1 .video_wrap {
   position: absolute;
   z-index: -1;
   overflow: hidden;
@@ -276,17 +276,17 @@ header .hero p {
   max-height: 56%;
 }
 
-.contents-1 .contents-img {
+.contents_1 .contents_img {
   padding-left: 0.6rem;
 }
 
-.contents-1 .video-wrap video {
+.contents_1 .video_wrap video {
   width: 100%;
   height: 100%;
 }
 
 /* contents-2 */
-.contents .contents-2 .container {
+.contents .contents_2 .container {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -295,17 +295,17 @@ header .hero p {
   max-width: 76%;
 }
 
-.contents-2 .image-wrap {
+.contents_2 .image_wrap {
   position: relative;
   z-index: 1;
 }
 
-.contents-2 .container img {
+.contents_2 .container img {
   width: 100%;
   z-index: 99;
 }
 
-.contents-2 .video-wrap {
+.contents_2 .video_wrap {
   position: absolute;
   z-index: -1;
   overflow: hidden;
@@ -318,17 +318,17 @@ header .hero p {
   max-height: 50%;
 }
 
-.contents-2 .contents-img {
+.contents_2 .contents_img {
   padding-right: 0.6rem;
 }
 
-.contents-2 .video-wrap video {
+.contents_2 .video_wrap video {
   width: 100%;
   height: 100%;
 }
 
 /* contents-3 */
-.contents .contents-3 .container {
+.contents .contents_3 .container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,20 +336,20 @@ header .hero p {
   max-width: 76%;
 }
 
-.contents-3 .image-wrap {
+.contents_3 .image_wrap {
   position: relative;
 }
 
-.contents-3 .container img {
+.contents_3 .container img {
   width: 100%;
 }
 
-.contents-3 .contents-img {
+.contents_3 .contents_img {
   padding-left: 0.6rem;
 }
 
 /* contents-4 */
-.contents .contents-4 .container {
+.contents .contents_4 .container {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -358,19 +358,19 @@ header .hero p {
   max-width: 76%;
 }
 
-.contents-4 .image-wrap {
+.contents_4 .image_wrap {
   position: relative;
 }
 
-.contents-4 .container img {
+.contents_4 .container img {
   width: 100%;
 }
 
-.contents-4 .contents-img {
+.contents_4 .contents_img {
   padding-right: 0.6rem;
 }
 
-.card-animaion {
+.card_animaion {
   width: 54%;
   height: auto;
   border: 1px solid #fff;
@@ -386,26 +386,26 @@ header .hero p {
   background-color: #000;
 }
 
-.card-animaion .image-wrap {
+.card_animaion .image_wrap {
   width: 50px;
   height: 70px;
 }
 
-.card-animaion img {
+.card_animaion img {
   width: 100%;
   height: 100%;
 }
 
-.card-animaion .txt {
+.card_animaion .txt {
   width: 40%;
   text-align: left;
 }
 
-.card-animaion .txt p {
+.card_animaion .txt p {
   font-size: 1.6rem;
 }
 
-.card-animaion .txt span {
+.card_animaion .txt span {
   font-size: 1.4rem;
   color: #0071EB;
 }
@@ -418,21 +418,21 @@ header .hero p {
 }
 
 /* "contents-5 */
-.contents-5 .headline {
+.contents_5 .headline {
   padding-bottom: 1.8rem;
   text-align: center;
 }
 
-.contents .contents-5 .container {
+.contents .contents_5 .container {
   margin: 0 auto;
   max-width: 76%;
 }
 
-.question-list {
+.question_list {
   margin-bottom: 0.3rem;
 }
 
-.question-headline {
+.question_headline {
   background-color: rgb(45, 45, 45);
   padding: 2rem;
   cursor: pointer;
@@ -445,11 +445,11 @@ header .hero p {
   font-size: 2.4rem;
 }
 
-.question-headline:hover {
+.question_headline:hover {
   background-color: rgb(66, 66, 66);
 }
 
-.question-headline:before {
+.question_headline:before {
   content: '+';
   position: absolute;
   top: 50%;
@@ -459,32 +459,32 @@ header .hero p {
   font-size: 3.4rem;
 }
 
-.question-list.active .question-headline:before {
+.question_list.active .question_headline:before {
   content: 'x';
   font-size: 3rem;
 }
 
-.question-txt {
+.question_txt {
   padding: 1.5rem;
   font-size: 2.4rem;
   background-color: rgb(45, 45, 45);
 }
 
-.question-txt p:nth-child(1) {
+.question_txt p:nth-child(1) {
   margin-bottom: 2rem;
 }
 
-.question-list a {
+.question_list a {
   color: #fff;
   text-decoration: underline;
 }
 
-.contents-5 .signup-wrap {
+.contents_5 .signup_wrap {
   width: 100%;
   margin-top: 3.8rem;
 }
 
-.contents-5 .signup-wrap p {
+.contents_5 .signup_wrap p {
   text-align: center;
   font-size: 2rem;
 }
@@ -513,11 +513,11 @@ footer .phoneNmbr a {
   text-decoration: underline;
 }
 
-.footer-item {
+.footer_item {
   width: 100%;
 }
 
-.footer-item-list {
+.footer_item_list {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -525,7 +525,7 @@ footer .phoneNmbr a {
   /* background-color: #0071EB; */
 }
 
-.footer-item-list li {
+.footer_item_list li {
   /* flex-basis: 25%;
   flex-grow: 0;
   flex-shrink: 0; */
@@ -535,26 +535,26 @@ footer .phoneNmbr a {
   /* background-color: #E50914; */
 }
 
-.footer-item-list li a {
+.footer_item_list li a {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.4rem;
   text-decoration: underline;
 }
 
-.footer-language {
+.footer_language {
   margin: 2rem 0;
 }
 
-.footer-txt span {
+.footer_txt span {
   font-size: 1.4rem;
 }
 
-.footer-txt p {
+.footer_txt p {
   margin-top: 2.8rem;
   font-size: 1.2rem;
 }
 
-.footer-txt a {
+.footer_txt a {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -581,19 +581,19 @@ footer .phoneNmbr a {
     font-size: 1.8rem;
   }
 
-  .contents .contents-1 .container,
-  .contents .contents-3 .container,
-  .contents .contents-5 .container   {
+  .contents .contents_1 .container,
+  .contents .contents_3 .container,
+  .contents .contents_5 .container   {
     flex-direction: column;
     max-width: 90%;
   }
 
-  .contents .contents-2 .container {
+  .contents .contents_2 .container {
     flex-direction: column;
     max-width: 90%;
   }
 
-  .contents .contents-4 .container {
+  .contents .contents_4 .container {
     flex-direction: column;
     max-width: 90%;
   }
@@ -603,7 +603,7 @@ footer .phoneNmbr a {
     text-align: center;
   }
 
-  .contents .contents-img {
+  .contents .contents_img {
     width: 100%;
   }
 
@@ -620,24 +620,24 @@ footer .phoneNmbr a {
   }
 
   /* contents-5 */
-  .question-list {
+  .question_list {
     margin-bottom: 0.3rem;
   }
   
-  .question-headline {
+  .question_headline {
     font-size: 1.8rem;
     font-weight: 400;
   }
   
-  .question-headline:before {
+  .question_headline:before {
     font-size: 3rem;
   }
   
-  .question-list.active .question-headline:before {
+  .question_list.active .question_headline:before {
     font-size: 2.6rem;
   }
   
-  .question-txt {
+  .question_txt {
     font-size: 1.8rem;
   }
   
@@ -647,7 +647,7 @@ footer .phoneNmbr a {
     max-width: 90%;
   }
 
-  .footer-item-list li {
+  .footer_item_list li {
     flex: 0 0 44%;
   }
 }
